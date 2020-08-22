@@ -10,6 +10,8 @@ public class BillMeTests {
     public void firstTest() {
         System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
+        driver.get("http://delfi.lv");
+        System.out.println(driver.getTitle());
         LOGGER.info("Privet");
         System.out.println("Hello, World!");
     }
