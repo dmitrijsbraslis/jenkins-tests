@@ -18,9 +18,11 @@ dependencies {
     implementation group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: '5.6.2'
     implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'
     implementation group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.13.3'
+    implementation group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version: '5.6.2'
 }
 
 test {
+    useJUnitPlatform()
     testLogging.showStandardStreams = true
     testLogging.exceptionFormat = 'full'
 }
